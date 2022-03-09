@@ -1,31 +1,24 @@
 ﻿Public Class Form1
-    Dim type As String = "Type something!!"
-    Dim form As Form2
-    Dim Textt As String
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles send.Click
 
-        If ServerboxPORT.Text Or serverboxIP.Text = "" Then
-            label.Text = type
-        Else
-            form.Start = True
-            form.ServerIP = serverboxIP.Text
-            form.ServerPORT = ServerboxPORT.Text
-            form.username = Text.Text
-            form.Show()
-        End If
+
+        Form2.Start = True
+        Form2.ServerIP = serverboxIP.Text
+        Form2.ServerPORT = ServerboxPORT.Text
+        Form2.username = Username.Text
+        Form2.Show()
+
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
 
-        If ClientBoxIP.Text Or ClientBoxPORT.Text = "" Then
-            label.Text = type
-        Else
-            form.Start = False
-            form.ClientIP = ClientBoxIP.Text
-            form.ClientPORT = ClientBoxPORT.Text
-            form.username = Text.Text
-            form.Show()
-        End If
+
+        Form2.Start = False
+        Form2.ClientIP = ClientBoxIP.Text
+        Form2.ClientPORT = ClientBoxPORT.Text
+        Form2.username = Username.Text
+        Form2.Show()
     End Sub
 End Class

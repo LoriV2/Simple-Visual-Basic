@@ -17,6 +17,7 @@ Public Class Form2
     Public ClientPORT As String
     Public Start As Boolean
 
+
     Public Sub New()
 
         ' To wywołanie jest wymagane przez projektanta.

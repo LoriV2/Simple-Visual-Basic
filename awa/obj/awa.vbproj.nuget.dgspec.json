@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hatem\\Desktop\\aaa\\.net stuff\\awa\\awa\\awa.vbproj": {}
+    "C:\\Users\\hatem\\Source\\Repos\\Simple-Visual-Basic\\awa\\awa.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\hatem\\Desktop\\aaa\\.net stuff\\awa\\awa\\awa.vbproj": {
+    "C:\\Users\\hatem\\Source\\Repos\\Simple-Visual-Basic\\awa\\awa.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hatem\\Desktop\\aaa\\.net stuff\\awa\\awa\\awa.vbproj",
+        "projectUniqueName": "C:\\Users\\hatem\\Source\\Repos\\Simple-Visual-Basic\\awa\\awa.vbproj",
         "projectName": "awa",
-        "projectPath": "C:\\Users\\hatem\\Desktop\\aaa\\.net stuff\\awa\\awa\\awa.vbproj",
+        "projectPath": "C:\\Users\\hatem\\Source\\Repos\\Simple-Visual-Basic\\awa\\awa.vbproj",
         "packagesPath": "C:\\Users\\hatem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hatem\\Desktop\\aaa\\.net stuff\\awa\\awa\\obj\\",
+        "outputPath": "C:\\Users\\hatem\\Source\\Repos\\Simple-Visual-Basic\\awa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hatem\\AppData\\Roaming\\NuGet\\NuGet.Config",

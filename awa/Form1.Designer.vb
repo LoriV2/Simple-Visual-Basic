@@ -25,7 +25,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.send = New System.Windows.Forms.Button()
         Me.label = New System.Windows.Forms.Label()
-        Me.Text = New System.Windows.Forms.TextBox()
+        Me.Username = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ClientBoxIP = New System.Windows.Forms.TextBox()
         Me.ClientBoxPORT = New System.Windows.Forms.TextBox()
@@ -35,6 +35,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Warning = New System.Windows.Forms.Label()
+        Me.NoData = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'send
@@ -55,12 +57,12 @@ Partial Class Form1
         Me.label.TabIndex = 2
         Me.label.Text = "Client"
         '
-        'Text
+        'Username
         '
-        Me.Text.Location = New System.Drawing.Point(207, 110)
-        Me.Text.Name = "Text"
-        Me.Text.Size = New System.Drawing.Size(242, 24)
-        Me.Text.TabIndex = 3
+        Me.Username.Location = New System.Drawing.Point(207, 110)
+        Me.Username.Name = "Username"
+        Me.Username.Size = New System.Drawing.Size(242, 24)
+        Me.Username.TabIndex = 3
         '
         'Label1
         '
@@ -135,6 +137,23 @@ Partial Class Form1
         Me.Button1.Text = "Join"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Warning
+        '
+        Me.Warning.AutoSize = True
+        Me.Warning.Location = New System.Drawing.Point(301, 268)
+        Me.Warning.Name = "Warning"
+        Me.Warning.Size = New System.Drawing.Size(0, 17)
+        Me.Warning.TabIndex = 13
+        '
+        'NoData
+        '
+        Me.NoData.AutoSize = True
+        Me.NoData.Location = New System.Drawing.Point(308, 268)
+        Me.NoData.Name = "NoData"
+        Me.NoData.Size = New System.Drawing.Size(17, 17)
+        Me.NoData.TabIndex = 14
+        Me.NoData.Text = "..."
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -142,6 +161,8 @@ Partial Class Form1
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(635, 338)
+        Me.Controls.Add(Me.NoData)
+        Me.Controls.Add(Me.Warning)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -151,7 +172,7 @@ Partial Class Form1
         Me.Controls.Add(Me.ClientBoxPORT)
         Me.Controls.Add(Me.ClientBoxIP)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Text)
+        Me.Controls.Add(Me.Username)
         Me.Controls.Add(Me.label)
         Me.Controls.Add(Me.send)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -164,7 +185,7 @@ Partial Class Form1
 
     Friend WithEvents send As Button
     Friend WithEvents label As Label
-    Friend WithEvents Text As TextBox
+    Friend WithEvents Username As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ClientBoxIP As TextBox
     Friend WithEvents ClientBoxPORT As TextBox
@@ -174,4 +195,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Warning As Label
+    Friend WithEvents NoData As Label
 End Class
